@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ham_co_san_cua_mang_2</title>
+</head>
+<body>
+<script>
+    // const num=window.prompt();
+    // //12456
+    // const str = num.toString();
+    // //'12456'
+    const str = '12456';
+    const result = [str[0]]; //result =1
+    console.log(result);
+    for(let x=1; x<str.length; x++)
+    {
+        if((str[x -1]%2 === 0)&&(str[x]%2 === 0))
+    {
+        result.push('-', str[x]);
+    }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+</script>
+</body>
+</html>
